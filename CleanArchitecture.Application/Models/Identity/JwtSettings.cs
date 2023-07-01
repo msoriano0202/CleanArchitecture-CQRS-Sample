@@ -8,7 +8,7 @@
         public double DurationInMinutes { get; set; }
 
         
-        //----- refresh token -----//
-        public TimeSpan ExpireTime { get; set; }
+        ////----- refresh token -----//
+        //public TimeSpan ExpireTime { get; set; }
     }
 }

@@ -5,8 +5,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CleanArchitecture.Identity
 {
-    //public class CleanArchitectureIdentityDbContext : IdentityDbContext<ApplicationUser>
-    public class CleanArchitectureIdentityDbContext : IdentityDbContext // --- refresh token ---
+    public class CleanArchitectureIdentityDbContext : IdentityDbContext<ApplicationUser>
+    //public class CleanArchitectureIdentityDbContext : IdentityDbContext // --- refresh token ---
     {
         public CleanArchitectureIdentityDbContext(DbContextOptions<CleanArchitectureIdentityDbContext> options) : base(options)
         {
@@ -22,8 +22,8 @@ namespace CleanArchitecture.Identity
             //builder.ApplyConfiguration(new UserRoleConfiguration());
         }
 
-        public virtual DbSet<RefreshToken>? RefreshToken { get; set; }
-        public virtual DbSet<ApplicationUser>? ApplicationUsers { get; set; }
+        //public virtual DbSet<RefreshToken>? RefreshToken { get; set; } //--Refresh Token
+        //public virtual DbSet<ApplicationUser>? ApplicationUsers { get; set; } //--Refresh Token
 
     }
 }

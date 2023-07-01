@@ -8,9 +8,9 @@
         public string Token { get; set; } = string.Empty;
 
 
-        // --- refresh token ---
-        public string RefreshToken { get; set; } = string.Empty;
-        public bool Success { get; set; } = false;
-        public List<string>? Errors { get; set; } = new List<string>();
+        //// --- refresh token ---
+        //public string RefreshToken { get; set; } = string.Empty;
+        //public bool Success { get; set; } = false;
+        //public List<string>? Errors { get; set; } = new List<string>();
     }
 }

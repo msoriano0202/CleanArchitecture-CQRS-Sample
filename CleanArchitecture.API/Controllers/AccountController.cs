@@ -27,11 +27,11 @@ namespace CleanArchitecture.API.Controllers
             return Ok(await _authService.Register(request));
         }
 
-        [HttpPost("RefreshToken")]
-        public async Task<ActionResult<AuthResponse>> RefreshToken([FromBody] TokenRequest request)
-        {
-            return Ok(await _authService.RefreshToken(request));
-        }
+        //[HttpPost("RefreshToken")]
+        //public async Task<ActionResult<AuthResponse>> RefreshToken([FromBody] TokenRequest request)
+        //{
+        //    return Ok(await _authService.RefreshToken(request));
+        //}
         
     }
 }
